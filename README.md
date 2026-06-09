@@ -7,40 +7,6 @@ This project showcases clean UI/UX layout design, structured CSS styling, and dy
 
 ---
 
-## 🏗️ Architecture & Website Flow
-┌────────────────────────────────────────────────────────────────────────┐
-│                          WEBSITE USER FLOW                             │
-│                                                                        │
-│       ┌───────────────┐                                                │
-│       │  Landing Page │ (index.html + Style.css)                       │
-│       │  [Homepage]   │ ──► Features, Quick Nav & Overview             │
-│       └───────┬───────┘                                                │
-│               │                                                        │
-│               ├───────────────────────┬────────────────────────┐       │
-│               ▼                       ▼                        ▼       │
-│       ┌───────────────┐       ┌───────────────┐        ┌──────────────┐│
-│       │ Medicine Shop │       │ Doctor Panel  │        │ Care Services││
-│       │  (med.html)   │       │  (Doc.html)   │        │(service.html)││
-│       │   [med.js]    │       │[Doctors Page] │        │ [Service.css]││
-│       └───────┬───────┘       └───────┬───────┘        └───────┬──────┘│
-│               │                       │                        │       │
-│               └───────────────────────┼────────────────────────┘       │
-│                                       ▼                                │
-│                               ┌───────────────┐                        │
-│                               │ User Accounts │                        │
-│                               │ (login.html)  │                        │
-│                               │ [Sign up Page]│                        │
-│                               └───────┬───────┘                        │
-│                                       ▼                                │
-│                               ┌───────────────┐                        │
-│                               │ Support/Reach │                        │
-│                               │ (contact.html)│                        │
-│                               └───────────────┘                        │
-└────────────────────────────────────────────────────────────────────────┘
-
-
----
-
 ## 🛠️ Tech Stack
 
 | Layer | Technology Used | Description |
