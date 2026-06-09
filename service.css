@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css?family=Andika&display=swap");
+
+:root {
+  --black: black;
+  --purple: purple;
+  --light-color: #666;
+  --box-shadow: 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: "Andika", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fff;
+}
+
+/* Header */
+.header {
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  background: #fff;
+  z-index: 1000;
+  box-shadow: var(--box-shadow);
+}
+
+.header .logo img {
+  margin-top: 10px;
+  height: 100px;
+  width: auto;
+  display: inline-block;
+}
+
+.header .headbar a {
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  color: var(--light-color);
+  transition: background 0.3s, color 0.3s;
+}
+
+.header .headbar a:hover {
+  color: #fff;
+  background: linear-gradient(#fab2ff 40%, #b69ecf);
+}
+
+.header .menubtn {
+  margin-right: 60px;
+}
+
+.header .menubtn button {
+  padding: 10px 45px;
+  font-size: 14px;
+  color: #fff;
+  background-image: linear-gradient(to right, #d3b1e9, #d598ec, #84acf7);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/*header*/
+
+/*about*/
+
+section {
+  padding-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #eee;
+  position: relative;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: #ddd;
+}
+
+.container {
+  position: relative;
+  max-width: 1100px;
+  min-height: 550px;
+  display: flex;
+  z-index: 1000;
+}
+
+.container .about {
+  position: relative;
+  padding: 70px 50px;
+  margin-left: 100px;
+  width: calc(100% - 150px);
+  height: 100%;
+  background: #fff;
+  box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  flex-direction: column; /* Changed to column */
+  align-items: center; /* Centered horizontally */
+}
+
+.container .about-form {
+  position: absolute;
+  top: 40px;
+  width: 350px;
+  height: calc(100% - 80px);
+  background: linear-gradient(120deg, #fab2ff 40%, #b69ecf);
+  margin-left: -170px;
+  z-index: 1;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.container .about h3 {
+  font-size: 3.5rem;
+  line-height: 1.8;
+  color: var(--black);
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%; /* Full width for centering */
+}
+
+.container .about p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: var(--light-color);
+  padding: 1rem 0;
+  text-align: justify;
+  text-justify: inter-word;
+  max-width: 800px;
+  margin: 0 auto; /* Center the paragraph */
+}
+
+.about-us-image {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 300px;
+  height: calc(100% - 80px);
+  background: linear-gradient(120deg, #fab2ff 40%, #b69ecf);
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.about-us-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.btn {
+  border: 1px solid var(--black);
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  color: var(--black);
+  cursor: pointer;
+  background: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background: linear-gradient(120deg, #fab2ff 40%, #663399);
+  color: #fff;
+}
+
+.container .about span {
+  color: var(--dark-moderate-violet);
+  font-weight: bold;
+}
+
+.container .about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Make content take full available width */
+}
+/*about*/
